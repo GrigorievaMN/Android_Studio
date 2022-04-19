@@ -30,12 +30,6 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
         <Switch
             android:id="@+id/switch1"
             android:layout_width="match_parent"
@@ -64,12 +58,15 @@
             android:layout_height="wrap_content"
             android:text="ToggleButton" />
 
-        <EditText
-            android:id="@+id/editTextTextMultiLine"
+        <Button
+            android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="403dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:text="Task2"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="48sp"
+            android:textStyle="bold|italic" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
