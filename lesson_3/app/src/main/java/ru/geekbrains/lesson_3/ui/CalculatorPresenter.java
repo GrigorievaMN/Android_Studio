@@ -15,6 +15,8 @@ public class CalculatorPresenter {
     private double argOne;
 
     private Double argTwo;
+    private boolean pointPress;
+    private int cntAfterPoint;
 
     private  Operator selectedOperator;
 
@@ -25,16 +27,26 @@ public class CalculatorPresenter {
 
 
     public void onDigitPressed(int digit) {
+        if(pointPress) cntAfterPoint++;
 
         if (argTwo == null) {
+            if(pointPress){
+                argOne = argOne  + digit * Math.pow(10, -cntAfterPoint);
+                view.showResult(String.valueOf(argOne));
+            } else {
+                argOne = argOne * 10 + digit;
+                showFormatted(argOne);
+            }
 
-            argOne = argOne * 10 + digit;
-
-            showFormatted(argOne);
         } else {
-            argTwo = argTwo * 10 + digit;
+            if(pointPress){
+                argTwo = argTwo  + digit* Math.pow(10, -cntAfterPoint);
+                view.showResult(String.valueOf(argTwo));
+            } else {
+                argTwo = argTwo * 10 + digit;
+                showFormatted(argTwo);
+            }
 
-            showFormatted(argTwo);
 
         }
     }
@@ -46,11 +58,14 @@ public class CalculatorPresenter {
             view.showResult(String.valueOf(argOne));
         }
             argTwo = 0.0;
+            pointPress = false;
+            cntAfterPoint = 0;
 
         selectedOperator = operator;
     }
 
     public void onPointPressed() {
+        pointPress = true;
     }
 
     private void showFormatted(double value) {
