@@ -56,4 +56,13 @@ public class CalculatorPresenter {
     private void showFormatted(double value) {
         view.showResult(formater.format(value));
     }
+
+    public void onEquallyPressed() {
+        if(selectedOperator != null) {
+            argOne = calculator.perform(argOne, argTwo, selectedOperator);
+            view.showResult(String.valueOf(argOne));
+        }
+        argTwo = 0.0;
+
+    }
 }
