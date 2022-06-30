@@ -43,9 +43,7 @@ public class CalculatorActivity  extends AppCompatActivity implements Calculator
         View.OnClickListener digitClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 presenter.onDigitPressed(digits.get(view.getId()));
-
             }
         };
 
