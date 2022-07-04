@@ -3,7 +3,6 @@
     <style name="CalcButton" parent="Widget.MaterialComponents.Button">
         <item name="android:fontFamily">@font/custom_font</item>
         <item name="android:textSize">@dimen/button_text</item>
-        <item name="android:layout_margin">@dimen/margin_button</item>
 
     </style>
 
