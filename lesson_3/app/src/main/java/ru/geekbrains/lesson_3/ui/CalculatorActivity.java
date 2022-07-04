@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
@@ -100,4 +101,5 @@ public class CalculatorActivity  extends AppCompatActivity implements Calculator
         resultTxt.setText(result);
 
     }
+
 }
