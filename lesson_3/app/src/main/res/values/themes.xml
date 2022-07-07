@@ -16,4 +16,10 @@
         <item name="materialButtonStyle">@style/CalcButton</item>
 
       </style>
+
+
+    <style name="Theme.Lesson_3.V2">
+        <item name="colorPrimary">@android:color/holo_red_dark</item>
+
+    </style>
   </resources>
