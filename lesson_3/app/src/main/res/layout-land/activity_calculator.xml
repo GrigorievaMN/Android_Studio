@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    tools:context=".ui.CalculatorActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:textSize="@dimen/text_size"
+
+        android:gravity="end"
+        tools:text="433" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_2"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_3"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_4"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_5"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_6"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_7"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_8"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_9"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_point"
+        android:layout_columnWeight="1" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_add"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_subst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_subst"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_mult"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_div"
+        android:layout_columnWeight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_eq"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="5"
+        android:text="@string/_equals" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="5"
+        android:text="@string/select_theme" />
+
+</GridLayout>
