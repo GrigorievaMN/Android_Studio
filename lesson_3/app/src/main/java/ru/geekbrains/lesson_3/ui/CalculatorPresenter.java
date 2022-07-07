@@ -53,9 +53,14 @@ public class CalculatorPresenter {
 
 
     public void onOperatorPressed(Operator operator) {
-        if(selectedOperator != null) {
-            argOne = calculator.perform(argOne, argTwo, selectedOperator);
-            view.showResult(String.valueOf(argOne));
+        if(selectedOperator != null){
+            if( !argTwo.equals(0.0)){
+
+                argOne = calculator.perform(argOne, argTwo, selectedOperator);
+            }
+
+                view.showResult(String.valueOf(argOne));
+
         }
             argTwo = 0.0;
             pointPress = false;

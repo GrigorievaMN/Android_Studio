@@ -16,4 +16,5 @@
     <string name="_add">+</string>
     <string name="_equals">=</string>
     <string name="_subst">-</string>
+    <string name="select_theme">Select Theme</string>
 </resources>

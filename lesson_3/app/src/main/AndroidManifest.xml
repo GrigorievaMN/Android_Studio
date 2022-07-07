@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lesson_3">
-
+        <activity
+            android:name=".ui.SelectThemeActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.CalculatorActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

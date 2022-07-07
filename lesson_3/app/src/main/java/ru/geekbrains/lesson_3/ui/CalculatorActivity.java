@@ -1,11 +1,11 @@
 package ru.geekbrains.lesson_3.ui;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.HashMap;
@@ -28,6 +28,8 @@ public class CalculatorActivity  extends AppCompatActivity implements Calculator
         resultTxt = findViewById(R.id.result);
 
         presenter = new CalculatorPresenter(this, new CalculatorImpl());
+
+        resultTxt.setBackgroundResource(R.drawable.rectangle);
 
         Map<Integer,Integer> digits = new HashMap<>();
         digits.put(R.id.button_1, 1);
@@ -93,8 +95,18 @@ public class CalculatorActivity  extends AppCompatActivity implements Calculator
             }
         });
 
+        findViewById(R.id.theme).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CalculatorActivity.this, SelectThemeActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
+
 
     @Override
     public void showResult(String result) {

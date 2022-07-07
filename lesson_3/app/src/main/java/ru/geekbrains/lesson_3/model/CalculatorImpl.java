@@ -16,8 +16,7 @@ public class CalculatorImpl implements Calculator {
             }
             return 0.0;
         } catch (ArithmeticException e) {
-            e.getStackTrace();
-            return 0.0;
+                      return 0.0;
         }
     }
 }

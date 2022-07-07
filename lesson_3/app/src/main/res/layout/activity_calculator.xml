@@ -200,14 +200,20 @@
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/text_size"
+        android:layout_margin="@dimen/margin_text"
         android:gravity="end|center_vertical"
-        app:layout_constraintBottom_toTopOf="@+id/button_7"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme"
+        app:layout_constraintBottom_toTopOf="@id/button_7"
         tools:ignore="SpUsage" />
 
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_theme" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
